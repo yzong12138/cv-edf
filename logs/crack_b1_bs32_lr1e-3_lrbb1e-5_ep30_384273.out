@@ -1,0 +1,108 @@
+==========================================
+Job ID     : 384273
+Node       : kavinsky
+Model      : efficientnet-b1
+Batch size : 32
+LR (head)  : 1e-3
+LR (bb)    : 1e-5
+Epochs     : 30
+==========================================
+Run dir: /home/zong/cv-dataset/output/net_b1_bs32_lr1e-03_lrbb1e-05_epochs30
+Device: cuda
+WARNING: 3 entries in CSV have no matching file and will be skipped.
+
+Dataset: 3,590 images  |  class-0: 1,319  class-1: 2,271
+Split sizes  — train: 2,512  val: 538  test: 540
+  train: class-0=923  class-1=1589
+  val: class-0=198  class-1=340
+  test: class-0=198  class-1=342
+
+Model: EfficientNet-B1  |  img_size: 240  |  params: 6,515,746
+Class weights: [1.3608794212341309, 0.7904006838798523]
+
+Training for up to 30 epochs (early-stop patience=7) …
+
+AMP enabled (mixed precision)
+Epoch   1/30 | train loss 0.3608  f1 0.8138 | val loss 0.2564  f1 0.9153 | [BEST] 69s
+Epoch   2/30 | train loss 0.2139  f1 0.9103 | val loss 0.1974  f1 0.9371 | [BEST] 46s
+Epoch   3/30 | train loss 0.1783  f1 0.9235 | val loss 0.1715  f1 0.9318 |        47s
+Epoch   4/30 | train loss 0.1733  f1 0.9227 | val loss 0.1527  f1 0.9445 | [BEST] 56s
+Epoch   5/30 | train loss 0.1371  f1 0.9395 | val loss 0.1533  f1 0.9281 |        48s
+Epoch   6/30 | train loss 0.1400  f1 0.9403 | val loss 0.1479  f1 0.9426 |        57s
+Epoch   7/30 | train loss 0.1259  f1 0.9466 | val loss 0.1437  f1 0.9445 | [BEST] 54s
+Epoch   8/30 | train loss 0.1247  f1 0.9470 | val loss 0.1359  f1 0.9462 | [BEST] 47s
+Epoch   9/30 | train loss 0.1254  f1 0.9455 | val loss 0.1313  f1 0.9446 |        51s
+Epoch  10/30 | train loss 0.1086  f1 0.9582 | val loss 0.1303  f1 0.9445 |        54s
+Epoch  11/30 | train loss 0.1199  f1 0.9470 | val loss 0.1183  f1 0.9446 |        51s
+Epoch  12/30 | train loss 0.1020  f1 0.9574 | val loss 0.1238  f1 0.9463 | [BEST] 62s
+Epoch  13/30 | train loss 0.0988  f1 0.9590 | val loss 0.1240  f1 0.9464 | [BEST] 50s
+Epoch  14/30 | train loss 0.0855  f1 0.9670 | val loss 0.1174  f1 0.9483 | [BEST] 54s
+Epoch  15/30 | train loss 0.0913  f1 0.9634 | val loss 0.1217  f1 0.9501 | [BEST] 65s
+Epoch  16/30 | train loss 0.0892  f1 0.9634 | val loss 0.1150  f1 0.9556 | [BEST] 61s
+Epoch  17/30 | train loss 0.0754  f1 0.9674 | val loss 0.1129  f1 0.9482 |        44s
+Epoch  18/30 | train loss 0.0812  f1 0.9694 | val loss 0.1138  f1 0.9537 |        67s
+Epoch  19/30 | train loss 0.0825  f1 0.9677 | val loss 0.1164  f1 0.9500 |        64s
+Epoch  20/30 | train loss 0.0901  f1 0.9642 | val loss 0.1156  f1 0.9574 | [BEST] 51s
+Epoch  21/30 | train loss 0.0897  f1 0.9638 | val loss 0.1133  f1 0.9556 |        46s
+Epoch  22/30 | train loss 0.0827  f1 0.9677 | val loss 0.1126  f1 0.9592 | [BEST] 64s
+Epoch  23/30 | train loss 0.0916  f1 0.9630 | val loss 0.1122  f1 0.9501 |        48s
+Epoch  24/30 | train loss 0.0777  f1 0.9682 | val loss 0.1138  f1 0.9610 | [BEST] 47s
+Epoch  25/30 | train loss 0.1005  f1 0.9614 | val loss 0.1102  f1 0.9519 |        46s
+Epoch  26/30 | train loss 0.0792  f1 0.9690 | val loss 0.1127  f1 0.9502 |        47s
+Epoch  27/30 | train loss 0.0753  f1 0.9701 | val loss 0.1124  f1 0.9537 |        50s
+Epoch  28/30 | train loss 0.0742  f1 0.9701 | val loss 0.1127  f1 0.9555 |        64s
+Epoch  29/30 | train loss 0.0862  f1 0.9650 | val loss 0.1119  f1 0.9537 |        60s
+Epoch  30/30 | train loss 0.0812  f1 0.9658 | val loss 0.1134  f1 0.9465 |        45s
+
+Best val F1: 0.9610  →  /home/zong/cv-dataset/output/net_b1_bs32_lr1e-03_lrbb1e-05_epochs30/best_model.pt
+  Saved: /home/zong/cv-dataset/output/net_b1_bs32_lr1e-03_lrbb1e-05_epochs30/training_history.png
+Split sizes  — train: 2,512  val: 538  test: 540
+  train: class-0=923  class-1=1589
+  val: class-0=198  class-1=340
+  test: class-0=198  class-1=342
+
+============================================================
+  VALIDATION SET RESULTS
+============================================================
+  Accuracy       : 0.9610
+  F1 (weighted)  : 0.9610
+  F1 (macro)     : 0.9581
+  Precision (1)  : 0.9705
+  Recall (1)     : 0.9676
+  ROC-AUC        : 0.9920
+
+              precision    recall  f1-score   support
+
+    no crack       0.94      0.95      0.95       198
+       crack       0.97      0.97      0.97       340
+
+    accuracy                           0.96       538
+   macro avg       0.96      0.96      0.96       538
+weighted avg       0.96      0.96      0.96       538
+
+  Saved: /home/zong/cv-dataset/output/net_b1_bs32_lr1e-03_lrbb1e-05_epochs30/confusion_matrix_validation.png
+
+============================================================
+  TEST SET RESULTS
+============================================================
+  Accuracy       : 0.9704
+  F1 (weighted)  : 0.9705
+  F1 (macro)     : 0.9683
+  Precision (1)  : 0.9851
+  Recall (1)     : 0.9678
+  ROC-AUC        : 0.9962
+
+              precision    recall  f1-score   support
+
+    no crack       0.95      0.97      0.96       198
+       crack       0.99      0.97      0.98       342
+
+    accuracy                           0.97       540
+   macro avg       0.97      0.97      0.97       540
+weighted avg       0.97      0.97      0.97       540
+
+  Saved: /home/zong/cv-dataset/output/net_b1_bs32_lr1e-03_lrbb1e-05_epochs30/confusion_matrix_test.png
+
+Metrics saved to /home/zong/cv-dataset/output/net_b1_bs32_lr1e-03_lrbb1e-05_epochs30/metrics_summary.csv
+
+Done.

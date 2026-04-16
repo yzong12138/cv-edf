@@ -1,0 +1,23 @@
+==========================================
+Job ID     : 384274
+Node       : daft
+Model      : efficientnet-b1
+Batch size : 32
+LR (head)  : 3e-4
+LR (bb)    : 1e-5
+Epochs     : 30
+==========================================
+Run dir: /home/zong/cv-dataset/output/net_b1_bs32_lr3e-04_lrbb1e-05_epochs30
+Device: cuda
+WARNING: 3 entries in CSV have no matching file and will be skipped.
+
+Dataset: 3,590 images  |  class-0: 1,319  class-1: 2,271
+
+Checkpoint found — skipping training. (/home/zong/cv-dataset/output/net_b1_bs32_lr3e-04_lrbb1e-05_epochs30/best_model.pt)
+
+Results found — skipping evaluation. (/home/zong/cv-dataset/output/net_b1_bs32_lr3e-04_lrbb1e-05_epochs30/metrics_summary.csv)
+            accuracy  f1_weighted  f1_macro  precision    recall   roc_auc
+validation  0.964684     0.964665  0.961999   0.970674  0.973529  0.993241
+test        0.968519     0.968599  0.966285   0.982196  0.967836  0.996914
+
+Done.

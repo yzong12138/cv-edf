@@ -1,0 +1,16 @@
+[project]
+name = "cv-edf"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "pandas",
+    "opencv-python",
+    "pillow",
+    "matplotlib",
+    "tqdm",
+]
